@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Domus</h1>
+        <input placeholder="Pesquisar" id="searchBar" type="text">
+    </nav>
+    <hr>
+    <main>
+        <div id="modal" style="display: flex; flex-direction: column; align-items: flex-start; margin: 20px; gap: 10px;">
+            <h2>Formulário</h2>
+            <label for="nameInput">Nome:</label>
+            <input id="nameInput" type="text">
+            <label for="quantityInput">Quantidade:</label>
+            <input id="quantityInput" type="text">
+            <label for="minimumInput">Mínimo:</label>
+            <input id="minimumInput" type="text">
+            <button onclick="getInfo()">Criar</button>
+        </div>
+        <hr>
+        <h2>Estoque</h2>
+        <div id="stock">
+            <ul id="stockContainer">
+            </ul>
+        </div>
+        <h2>Lista de Compras</h2>
+        <div id="buyListContainer">
+            <ul id="buyList"></ul>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
